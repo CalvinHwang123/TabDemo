@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- 标题栏 -->
+    <include layout="@layout/title_tab1"/>
+
+    <!-- FrameLayout -->
+    <FrameLayout
+        android:id="@+id/fl_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <!-- RadioGroup -->
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal">
+        <!-- android:button="@null"去掉radioButton自带圆圈 -->
+        <RadioButton
+            android:id="@+id/rb_know"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:padding="10dp"
+            android:drawablePadding="10dp"
+            android:gravity="center_horizontal"
+            android:drawableTop="@drawable/selector_know_btn"
+            android:textColor="@color/colorNormal"
+            android:text="知道"/>
+        <RadioButton
+            android:id="@+id/rb_want_to_know"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:padding="10dp"
+            android:drawablePadding="10dp"
+            android:gravity="center_horizontal"
+            android:drawableTop="@drawable/selector_wantknow_btn"
+            android:textColor="@color/colorNormal"
+            android:text="我想知道"/>
+        <RadioButton
+            android:id="@+id/rb_my_page"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:padding="10dp"
+            android:drawablePadding="10dp"
+            android:gravity="center_horizontal"
+            android:drawableTop="@drawable/selector_my_btn"
+            android:textColor="@color/colorNormal"
+            android:text="我的主页"/>
+    </RadioGroup>
+
+</LinearLayout>

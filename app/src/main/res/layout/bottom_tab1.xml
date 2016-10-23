@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:baselineAligned="false"
+    android:background="@color/colorPrimary"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/ll_tab1_know"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <!-- 默认ImageButton可点击，ImageView不可点击
+         这里clickable设置为false，把点击事件交给外层的父布局处理
+         优化点击效果-->
+        <!-- background设置为透明，去除ImageButton自带的灰色背景 -->
+        <ImageButton
+            android:id="@+id/ib_know"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:src="@mipmap/btn_know_pre"
+            android:background="#00000000"
+            android:clickable="false"
+            android:contentDescription="@string/app_name"/>
+        <TextView
+            android:id="@+id/tv_know"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:textColor="@color/colorPressed"
+            android:text="知道"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_tab1_want_to_know"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/ib_want_to_know"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:src="@mipmap/btn_wantknow_nor"
+            android:background="#00000000"
+            android:clickable="false"
+            android:contentDescription="@string/app_name"/>
+        <TextView
+            android:id="@+id/tv_want_to_know"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:textColor="@color/colorNormal"
+            android:text="我想知道"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_tab1_my_pager"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/ib_my_pager"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:src="@mipmap/btn_my_nor"
+            android:background="#00000000"
+            android:clickable="false"
+            android:contentDescription="@string/app_name"/>
+        <TextView
+            android:id="@+id/tv_my_page"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:textColor="@color/colorNormal"
+            android:text="我的主页"/>
+    </LinearLayout>
+
+</LinearLayout>
