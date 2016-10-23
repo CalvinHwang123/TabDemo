@@ -26,6 +26,6 @@ Tab实现方案四（顶部）：
 ![image](https://github.com/CalvinHwang123/TabDemo/raw/master/screenshots/04viewpager+fragment+tabpageindicator.gif)
 
 Tab实现方案五：
--RadioGroup+Fragment（不可滑动）
+-  RadioGroup+Fragment（不可滑动）
 
 ![image](https://github.com/CalvinHwang123/TabDemo/raw/master/screenshots/05radiogroup+fragment.gif)
